@@ -11,7 +11,7 @@ class CustomTextFieldWithTitle: UIView{
     lazy var titleLable = getTitleLable()
     lazy var textField = getTextField()
     
-    init(title: String, placeHolderText: String){
+    init(title: String, placeHolderText: String = "*****"){
         super.init(frame: .zero)
         titleLable.text = title
         textField.placeholder = placeHolderText

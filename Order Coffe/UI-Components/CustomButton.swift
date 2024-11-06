@@ -1,9 +1,4 @@
-//
-//  CustomButtom.swift
-//  Order Coffe
-//
-//  Created by Ivan Pushkov on 30.10.2024.
-//
+
 
 import UIKit
 

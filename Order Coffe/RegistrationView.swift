@@ -3,64 +3,71 @@
 import UIKit
 import SnapKit
 
-struct RegistrationViewControllerViewModel {
-}
+
 
 
 protocol RegistrationViewProtocol : AnyObject {
     var presenter: RegistrationPresenterProtocol? { get set }
-    func configure(with viewModel: RegistrationViewControllerViewModel)
-    func printResponse(response: String)
+    
+    func registerButtonAction(response: String)
+    func getRegisterNameTextField()
+    func getPassWordTextField()
+    func getRepeatPasswordTextField()
+    func getRegistrateButton()
+    func getLoginPasswordRepiatPaswordText() -> [String?]
+    func showAlertView(with text: String)
 }
 
 
 final class RegistrationView: UIViewController {
-    
     var presenter: RegistrationPresenterProtocol?
     
-    var nameTextField: CustomTextFieldWithTitle!
-    var passwordTextField: CustomTextFieldWithTitle!
-    var repeatPasswordTextField: CustomTextFieldWithTitle!
-    var registrateButton: CustomButton!
+    weak var nameTextField: CustomTextFieldWithTitle!
+    weak var passwordTextField: CustomTextFieldWithTitle!
+    weak var repeatPasswordTextField: CustomTextFieldWithTitle!
+    weak var registrateButton: CustomButton!
+}
+
+extension RegistrationView: RegistrationViewProtocol {
     
+    
+   
+    //MARK: - Configuration View
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Регистрация"
-        nameTextField = getRegisterNameTextField()
-        passwordTextField = getPassWordTextField()
-        repeatPasswordTextField = getRepeatPasswordTextField()
-        registrateButton = getRegistrateButton()
         view.backgroundColor  = .white
+        presenter?.configRegisterView()
     }
-    
-    private func getRegisterNameTextField() -> CustomTextFieldWithTitle{
+    func getRegisterNameTextField() {
         let textField = CustomTextFieldWithTitle(title: "e-mail", placeHolderText: "example@example.ru")
         view.addSubview(textField)
         textField.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(200)
             make.right.left.equalToSuperview().inset(18)
         }
-        return textField
+        nameTextField = textField
     }
-    private func  getPassWordTextField() -> CustomTextFieldWithTitle{
-        let textField = CustomTextFieldWithTitle(title: "Пароль", placeHolderText: "*****")
+    func  getPassWordTextField() {
+        let  textField = CustomTextFieldWithTitle(title: "Пароль")
         view.addSubview(textField)
         textField.snp.makeConstraints { make in
             make.top.equalTo(nameTextField.snp_bottomMargin).offset(60)
             make.right.left.equalToSuperview().inset(18)
         }
-        return textField
+        passwordTextField = textField
     }
-    private func getRepeatPasswordTextField() -> CustomTextFieldWithTitle{
-        let textField = CustomTextFieldWithTitle(title: "Повторите пароль", placeHolderText: "*****")
+    func getRepeatPasswordTextField() {
+        let  textField = CustomTextFieldWithTitle(title: "Повторите пароль")
         view.addSubview(textField)
         textField.snp.makeConstraints { make in
             make.top.equalTo(passwordTextField.snp_bottomMargin).offset(60)
             make.right.left.equalToSuperview().inset(18)
         }
-        return textField
+        repeatPasswordTextField = textField
     }
-    private func getRegistrateButton() -> CustomButton{
+    
+    func getRegistrateButton() {
         let button = CustomButton(title: "Регистрация")
         view.addSubview(button)
         button.snp.makeConstraints { make in
@@ -68,22 +75,23 @@ final class RegistrationView: UIViewController {
             make.right.left.equalToSuperview().inset(18)
         }
         button.addTarget(nil, action: #selector(registrateUser), for: .touchUpInside)
-        return button
+        registrateButton = button
+    }
+ //MARK: - Action View
+    func getLoginPasswordRepiatPaswordText() -> [String?] {
+        return [nameTextField.textField.text, passwordTextField.textField.text, repeatPasswordTextField.textField.text]
     }
     @objc func registrateUser(){
-        presenter?.tryToRegister(email: nameTextField.textField.text, password: passwordTextField.textField.text, repeatPassword: repeatPasswordTextField.textField.text)
+        presenter?.tryToRegister()
     }
-    
-}
 
-
-
-extension RegistrationView: RegistrationViewProtocol {
-    func printResponse(response: String) {
+    func registerButtonAction(response: String) {
         print(response)
     }
-    
-    func configure(with viewModel: RegistrationViewControllerViewModel) {
-        
+    func showAlertView(with text: String) {
+        DispatchQueue.main.async {
+            let alert = AuthAlertController(massage: text)
+            self.present(alert, animated: true)
+        }
     }
 }

@@ -23,7 +23,20 @@
 		D72926452CD244FE009946FB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D72926442CD244FE009946FB /* SnapKit */; };
 		D7335F5F2CD2711200A75A84 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7335F5E2CD2711200A75A84 /* CustomTextField.swift */; };
 		D7335F612CD28E1D00A75A84 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7335F602CD28E1D00A75A84 /* CustomButton.swift */; };
-		D7335F632CD3AAB000A75A84 /* RegistrationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7335F622CD3AAB000A75A84 /* RegistrationEntity.swift */; };
+		D7335F632CD3AAB000A75A84 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7335F622CD3AAB000A75A84 /* AuthManager.swift */; };
+		D78850FC2CDA312100B1AF7B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78850FB2CDA312100B1AF7B /* AuthService.swift */; };
+		D78850FF2CDA381B00B1AF7B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D78850FE2CDA381B00B1AF7B /* Alamofire */; };
+		D78851012CDA86C600B1AF7B /* AuthAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78851002CDA86C600B1AF7B /* AuthAlertController.swift */; };
+		D78851082CDB8B5E00B1AF7B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78851032CDB8B5E00B1AF7B /* LoginPresenter.swift */; };
+		D78851092CDB8B5E00B1AF7B /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78851042CDB8B5E00B1AF7B /* LoginRouter.swift */; };
+		D788510A2CDB8B5E00B1AF7B /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78851052CDB8B5E00B1AF7B /* LoginBuilder.swift */; };
+		D788510B2CDB8B5E00B1AF7B /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78851062CDB8B5E00B1AF7B /* LoginInteractor.swift */; };
+		D788510C2CDB8B5E00B1AF7B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78851072CDB8B5E00B1AF7B /* LoginView.swift */; };
+		D78851142CDBCADE00B1AF7B /* ClousestCofeePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D788510F2CDBCADE00B1AF7B /* ClousestCofeePresenter.swift */; };
+		D78851152CDBCADE00B1AF7B /* ClousestCofeeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78851102CDBCADE00B1AF7B /* ClousestCofeeRouter.swift */; };
+		D78851162CDBCADE00B1AF7B /* ClousestCofeeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78851112CDBCADE00B1AF7B /* ClousestCofeeBuilder.swift */; };
+		D78851172CDBCADE00B1AF7B /* ClousestCofeeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78851122CDBCADE00B1AF7B /* ClousestCofeeInteractor.swift */; };
+		D78851182CDBCADE00B1AF7B /* ClousestCofeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78851132CDBCADE00B1AF7B /* ClousestCofeeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +57,19 @@
 		D72926412CD24240009946FB /* CustomTextFieldWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldWithTitle.swift; sourceTree = "<group>"; };
 		D7335F5E2CD2711200A75A84 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = "Order Coffe/UI-Components/CustomTextField.swift"; sourceTree = SOURCE_ROOT; };
 		D7335F602CD28E1D00A75A84 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomButton.swift; path = "Order Coffe/UI-Components/CustomButton.swift"; sourceTree = SOURCE_ROOT; };
-		D7335F622CD3AAB000A75A84 /* RegistrationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegistrationEntity.swift; path = "Order Coffe/UI-Components/RegistrationEntity.swift"; sourceTree = SOURCE_ROOT; };
+		D7335F622CD3AAB000A75A84 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthManager.swift; path = "Order Coffe/Helpers/AuthManager.swift"; sourceTree = SOURCE_ROOT; };
+		D78850FB2CDA312100B1AF7B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		D78851002CDA86C600B1AF7B /* AuthAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAlertController.swift; sourceTree = "<group>"; };
+		D78851032CDB8B5E00B1AF7B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		D78851042CDB8B5E00B1AF7B /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		D78851052CDB8B5E00B1AF7B /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
+		D78851062CDB8B5E00B1AF7B /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		D78851072CDB8B5E00B1AF7B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D788510F2CDBCADE00B1AF7B /* ClousestCofeePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousestCofeePresenter.swift; sourceTree = "<group>"; };
+		D78851102CDBCADE00B1AF7B /* ClousestCofeeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousestCofeeRouter.swift; sourceTree = "<group>"; };
+		D78851112CDBCADE00B1AF7B /* ClousestCofeeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousestCofeeBuilder.swift; sourceTree = "<group>"; };
+		D78851122CDBCADE00B1AF7B /* ClousestCofeeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousestCofeeInteractor.swift; sourceTree = "<group>"; };
+		D78851132CDBCADE00B1AF7B /* ClousestCofeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousestCofeeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D72926452CD244FE009946FB /* SnapKit in Frameworks */,
+				D78850FF2CDA381B00B1AF7B /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +107,10 @@
 				D72926222CD13A0B009946FB /* API */,
 				D72926202CD138F2009946FB /* Application */,
 				D729263C2CD144C9009946FB /* Core */,
+				D788510D2CDBCA4F00B1AF7B /* Helpers */,
 				D72926232CD13AAA009946FB /* Registration */,
+				D78851022CDB8B2200B1AF7B /* Login */,
+				D788510E2CDBCA8F00B1AF7B /* ClousestCofee */,
 				D72926212CD13918009946FB /* Resources */,
 				D72926392CD14350009946FB /* UI-Components */,
 			);
@@ -110,6 +139,7 @@
 		D72926222CD13A0B009946FB /* API */ = {
 			isa = PBXGroup;
 			children = (
+				D78850FB2CDA312100B1AF7B /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -120,7 +150,6 @@
 				D72926302CD1433F009946FB /* RegistrationRouter.swift */,
 				D72926312CD1433F009946FB /* RegistrationBuilder.swift */,
 				D72926322CD1433F009946FB /* RegistrationInteractor.swift */,
-				D7335F622CD3AAB000A75A84 /* RegistrationEntity.swift */,
 				D729262F2CD1433F009946FB /* RegistrationPresenter.swift */,
 				D72926332CD1433F009946FB /* RegistrationView.swift */,
 			);
@@ -134,6 +163,7 @@
 				D729263A2CD14424009946FB /* CustomNavigationController.swift */,
 				D72926412CD24240009946FB /* CustomTextFieldWithTitle.swift */,
 				D7335F5E2CD2711200A75A84 /* CustomTextField.swift */,
+				D78851002CDA86C600B1AF7B /* AuthAlertController.swift */,
 			);
 			path = "UI-Components";
 			sourceTree = "<group>";
@@ -145,6 +175,38 @@
 				D729263F2CD23C29009946FB /* ColorLibrery.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		D78851022CDB8B2200B1AF7B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D78851042CDB8B5E00B1AF7B /* LoginRouter.swift */,
+				D78851052CDB8B5E00B1AF7B /* LoginBuilder.swift */,
+				D78851062CDB8B5E00B1AF7B /* LoginInteractor.swift */,
+				D78851032CDB8B5E00B1AF7B /* LoginPresenter.swift */,
+				D78851072CDB8B5E00B1AF7B /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D788510D2CDBCA4F00B1AF7B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D7335F622CD3AAB000A75A84 /* AuthManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D788510E2CDBCA8F00B1AF7B /* ClousestCofee */ = {
+			isa = PBXGroup;
+			children = (
+				D788510F2CDBCADE00B1AF7B /* ClousestCofeePresenter.swift */,
+				D78851102CDBCADE00B1AF7B /* ClousestCofeeRouter.swift */,
+				D78851112CDBCADE00B1AF7B /* ClousestCofeeBuilder.swift */,
+				D78851122CDBCADE00B1AF7B /* ClousestCofeeInteractor.swift */,
+				D78851132CDBCADE00B1AF7B /* ClousestCofeeView.swift */,
+			);
+			path = ClousestCofee;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +227,7 @@
 			name = "Order Coffe";
 			packageProductDependencies = (
 				D72926442CD244FE009946FB /* SnapKit */,
+				D78850FE2CDA381B00B1AF7B /* Alamofire */,
 			);
 			productName = "Order Coffe";
 			productReference = D72926092CD13741009946FB /* Order Coffe.app */;
@@ -196,6 +259,7 @@
 			mainGroup = D72926002CD13741009946FB;
 			packageReferences = (
 				D72926432CD244FE009946FB /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D78850FD2CDA381B00B1AF7B /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = D729260A2CD13741009946FB /* Products */;
 			projectDirPath = "";
@@ -224,16 +288,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7335F612CD28E1D00A75A84 /* CustomButton.swift in Sources */,
+				D78851142CDBCADE00B1AF7B /* ClousestCofeePresenter.swift in Sources */,
+				D78850FC2CDA312100B1AF7B /* AuthService.swift in Sources */,
 				D729260D2CD13741009946FB /* AppDelegate.swift in Sources */,
 				D72926422CD24240009946FB /* CustomTextFieldWithTitle.swift in Sources */,
 				D72926402CD23C29009946FB /* ColorLibrery.swift in Sources */,
 				D72926362CD1433F009946FB /* RegistrationBuilder.swift in Sources */,
+				D78851182CDBCADE00B1AF7B /* ClousestCofeeView.swift in Sources */,
 				D729263E2CD14508009946FB /* SetRGBColor.swift in Sources */,
 				D72926342CD1433F009946FB /* RegistrationPresenter.swift in Sources */,
+				D788510B2CDB8B5E00B1AF7B /* LoginInteractor.swift in Sources */,
 				D72926382CD1433F009946FB /* RegistrationView.swift in Sources */,
+				D78851082CDB8B5E00B1AF7B /* LoginPresenter.swift in Sources */,
+				D78851012CDA86C600B1AF7B /* AuthAlertController.swift in Sources */,
 				D729263B2CD14424009946FB /* CustomNavigationController.swift in Sources */,
-				D7335F632CD3AAB000A75A84 /* RegistrationEntity.swift in Sources */,
+				D788510A2CDB8B5E00B1AF7B /* LoginBuilder.swift in Sources */,
+				D78851152CDBCADE00B1AF7B /* ClousestCofeeRouter.swift in Sources */,
+				D78851162CDBCADE00B1AF7B /* ClousestCofeeBuilder.swift in Sources */,
+				D7335F632CD3AAB000A75A84 /* AuthManager.swift in Sources */,
+				D78851172CDBCADE00B1AF7B /* ClousestCofeeInteractor.swift in Sources */,
+				D788510C2CDB8B5E00B1AF7B /* LoginView.swift in Sources */,
 				D7335F5F2CD2711200A75A84 /* CustomTextField.swift in Sources */,
+				D78851092CDB8B5E00B1AF7B /* LoginRouter.swift in Sources */,
 				D72926372CD1433F009946FB /* RegistrationInteractor.swift in Sources */,
 				D729260F2CD13741009946FB /* SceneDelegate.swift in Sources */,
 				D72926352CD1433F009946FB /* RegistrationRouter.swift in Sources */,
@@ -460,6 +536,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		D78850FD2CDA381B00B1AF7B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire?tab=readme-ov-file";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -467,6 +551,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D72926432CD244FE009946FB /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		D78850FE2CDA381B00B1AF7B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D78850FD2CDA381B00B1AF7B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
