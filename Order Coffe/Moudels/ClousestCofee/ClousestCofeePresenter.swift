@@ -23,6 +23,7 @@ final class ClousestCofeePresenter: ClousestCofeePresenterProtocol {
     var interactor: ClousestCofeeInteractorProtocol?
     
     func configClousestCofeeView() {
+        view?.setViewToShow()
         view?.getLookOnTheMapButton()
         view?.getCofeePlaceTableView()
         interactor?.fetchPlaces()

@@ -33,6 +33,7 @@ final class LoginPresenter: LoginPresenterProtocol {
     var interactor: LoginInteractorProtocol?
     
     func configLoginView(){
+        view?.setViewToShow()
         view?.getAccountTextField()
         view?.getPasswordTextField()
         view?.getLoginButton()

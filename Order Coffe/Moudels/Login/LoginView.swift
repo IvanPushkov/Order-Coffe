@@ -19,6 +19,7 @@ protocol LoginViewProtocol : AnyObject {
     func getLoginButton()
     func takeLoginPasswordtext()-> [String?]
     func showAlertView(with text: String)
+    func setViewToShow()
 }
 
 final class LoginView: UIViewController {
@@ -29,8 +30,7 @@ final class LoginView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Вход"
-        view.backgroundColor  = .white
+       
         presenter?.configLoginView()
     }
 }
@@ -42,7 +42,7 @@ extension LoginView: LoginViewProtocol {
         let textField = CustomTextFieldWithTitle(title: "e-mail")
         textField.textField.delegate = self
         view.addSubview(textField)
- //       textField.textField.text = "Qwe@yandex.ru"  //here
+        textField.textField.text = "Qwe@yandex.ru"  //here
         textField.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.right.left.equalToSuperview().inset(18)
@@ -55,7 +55,7 @@ extension LoginView: LoginViewProtocol {
         let textField = CustomTextFieldWithTitle(title: "Пароль")
         view.addSubview(textField)
         textField.textField.delegate = self
-    //    textField.textField.text = "12345Qq"    //here
+        textField.textField.text = "12345Qq"    //here
         textField.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.right.left.equalToSuperview().inset(18)
@@ -87,6 +87,11 @@ extension LoginView: LoginViewProtocol {
             self.present(alert, animated: true)
         }
     }
+    func setViewToShow(){
+        title = "Вход"
+        view.backgroundColor  = .white
+        self.navigationItem.hidesBackButton = true
+    }
     
 }
 extension LoginView: UITextFieldDelegate{
@@ -97,3 +102,6 @@ extension LoginView: UITextFieldDelegate{
     }
     
 }
+
+  
+

@@ -34,11 +34,12 @@ class CustomCollectionViewCell: UICollectionViewCell {
         contentView.layer.cornerRadius = 10
         contentView.backgroundColor = .white
         contentView.layer.masksToBounds = true
-        contentView.layer.shadowRadius = 10
-        contentView.layer.shadowOpacity = 0.6
+        contentView.layer.shadowRadius = 4
+        contentView.layer.shadowOpacity = 0.4
         contentView.layer.shadowColor = UIColor.black.cgColor
-        contentView.layer.shadowOffset = CGSize(width: 20, height: -20)
-        
+        contentView.layer.shadowOffset = CGSize(width: 0, height: 5)
+        contentView.layer.borderColor = UIColor.gray.cgColor
+        contentView.layer.borderWidth = 0.2
     }
     
     private  func getNameLabel(){

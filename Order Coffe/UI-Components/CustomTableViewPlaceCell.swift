@@ -32,10 +32,10 @@ class CustomTableViewPlaceCell: UITableViewCell {
         backgroundColor = .customButtonTextColor
         self.layer.cornerRadius = 8
         self.layer.masksToBounds = true
-        self.layer.shadowOpacity = 0.2
+        self.layer.shadowOpacity = 0.4
         self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowRadius = 2
-        self.layer.shadowOffset = CGSize(width: 2, height: 2)
+        self.layer.shadowRadius = 3
+        self.layer.shadowOffset = CGSize(width: 0, height: 1)
     }
     
     

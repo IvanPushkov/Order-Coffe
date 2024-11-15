@@ -16,12 +16,12 @@ protocol RegistrationViewProtocol : AnyObject {
     func getRegistrateButton()
     func getLoginPasswordRepiatPaswordText() -> [String?]
     func showAlertView(with text: String)
+    func setViewToShow()
 }
 
 
 final class RegistrationView: UIViewController {
     var presenter: RegistrationPresenterProtocol?
-    
     weak var nameTextField: CustomTextFieldWithTitle!
     weak var passwordTextField: CustomTextFieldWithTitle!
     weak var repeatPasswordTextField: CustomTextFieldWithTitle!
@@ -33,10 +33,12 @@ extension RegistrationView: RegistrationViewProtocol  {
     
    
     //MARK: - Configuration View
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func setViewToShow(){
         title = "Регистрация"
         view.backgroundColor  = .white
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
         presenter?.configRegisterView()
     }
     func getRegisterNameTextField() {
