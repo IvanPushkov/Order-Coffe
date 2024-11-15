@@ -70,7 +70,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(cofeeImageView)
         cofeeImageView.snp.makeConstraints { make in
             make.top.left.right.equalToSuperview()
-            make.bottom.equalTo(cofeeName.snp.top).offset(-5)
+            make.height.equalToSuperview().multipliedBy(0.67)
         }
         cofeeImageView.contentMode = .scaleAspectFill
         cofeeImageView.layer.zPosition = -1

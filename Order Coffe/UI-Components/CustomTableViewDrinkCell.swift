@@ -27,7 +27,7 @@ class CustomTableViewDrinkCell: CustomTableViewPlaceCell{
             make.width.equalToSuperview().multipliedBy(0.25)
             make.trailing.equalToSuperview().inset(8)
         }
-        counterView.changeSizeAndColor(color: .customButtomBorderColor, size: 19)
+        counterView.changeSizeAndColor(color: .customBrownTextColor, size: 19)
     }
     
     func configure(with model: CofeeDrinksCellModell){
