@@ -11,6 +11,7 @@ class CustomNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getNewAppereanceForNavBar()
+        getNewBackButton()
     }
     
     private func getNewAppereanceForNavBar(){
@@ -20,6 +21,10 @@ class CustomNavigationController: UINavigationController {
         appereance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.customBrownTextColor]
         navigationBar.standardAppearance = appereance
         navigationBar.scrollEdgeAppearance = appereance
+    }
+    private func getNewBackButton(){
+        navigationBar.tintColor = .customBrownTextColor
+        
     }
     
 }

@@ -18,11 +18,13 @@ final class LoginInteractor: LoginInteractorProtocol {
     var serviceManager = AuthService.shared
     weak var presenter: LoginPresenterProtocol?
     func trytologin(loginData: [AccountData : String?]) {
-        let condition = loginManager.getCondition(accountData: loginData, authOperation: .login)
-        if condition == .success{
-            presenter?.pushToNearestCofeeView()
-        } else{
-            presenter?.showResponse(response: condition)
+       loginManager.getCondition(accountData: loginData, authOperation: .login){ [self] response in
+            let condition = response
+            if condition == .success{
+                presenter?.pushToNearestCofeeView()
+            } else{
+                presenter?.showResponse(response: condition)
+            }
         }
     }
 }

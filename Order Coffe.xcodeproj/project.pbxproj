@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DA8D7BEF0BF2387624F42DA /* libPods-Order Coffe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 710951365F9D92D01A76508C /* libPods-Order Coffe.a */; };
 		D729260D2CD13741009946FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D729260C2CD13741009946FB /* AppDelegate.swift */; };
 		D729260F2CD13741009946FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D729260E2CD13741009946FB /* SceneDelegate.swift */; };
 		D72926162CD13744009946FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72926152CD13744009946FB /* Assets.xcassets */; };
@@ -37,9 +38,38 @@
 		D78851162CDBCADE00B1AF7B /* ClousestCofeeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78851112CDBCADE00B1AF7B /* ClousestCofeeBuilder.swift */; };
 		D78851172CDBCADE00B1AF7B /* ClousestCofeeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78851122CDBCADE00B1AF7B /* ClousestCofeeInteractor.swift */; };
 		D78851182CDBCADE00B1AF7B /* ClousestCofeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78851132CDBCADE00B1AF7B /* ClousestCofeeView.swift */; };
+		D788511A2CDC101F00B1AF7B /* CustomTableViewPlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78851192CDC101F00B1AF7B /* CustomTableViewPlaceCell.swift */; };
+		D788511C2CDD0A0400B1AF7B /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D788511B2CDD0A0400B1AF7B /* LocationService.swift */; };
+		D788511E2CDE208800B1AF7B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D788511D2CDE208800B1AF7B /* StorageManager.swift */; };
+		D7D5F8922CE20DC700447B84 /* LocationFromServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8912CE20DC700447B84 /* LocationFromServer.swift */; };
+		D7D5F8992CE24AB500447B84 /* OrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8942CE24AB400447B84 /* OrderPresenter.swift */; };
+		D7D5F89A2CE24AB500447B84 /* OrderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8952CE24AB400447B84 /* OrderRouter.swift */; };
+		D7D5F89B2CE24AB500447B84 /* OrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8962CE24AB400447B84 /* OrderBuilder.swift */; };
+		D7D5F89C2CE24AB500447B84 /* OrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8972CE24AB400447B84 /* OrderInteractor.swift */; };
+		D7D5F89D2CE24AB500447B84 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8982CE24AB400447B84 /* OrderView.swift */; };
+		D7D5F8A12CE2510200447B84 /* DrinksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8A02CE2510200447B84 /* DrinksService.swift */; };
+		D7D5F8A32CE2521100447B84 /* CofeeDrinksServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8A22CE2521100447B84 /* CofeeDrinksServer.swift */; };
+		D7D5F8A52CE259C800447B84 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8A42CE259C800447B84 /* APIProtocol.swift */; };
+		D7D5F8A72CE2727600447B84 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8A62CE2727600447B84 /* CustomCollectionViewCell.swift */; };
+		D7D5F8A92CE3838B00447B84 /* FetchImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8A82CE3838B00447B84 /* FetchImageService.swift */; };
+		D7D5F8AB2CE3889B00447B84 /* CofeeDrinksCellModell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8AA2CE3889B00447B84 /* CofeeDrinksCellModell.swift */; };
+		D7D5F8AD2CE3B3E800447B84 /* CustomCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8AC2CE3B3E800447B84 /* CustomCounterView.swift */; };
+		D7D5F8B62CE5057D00447B84 /* MadeOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8B12CE5057D00447B84 /* MadeOrderPresenter.swift */; };
+		D7D5F8B72CE5057D00447B84 /* MadeOrderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8B22CE5057D00447B84 /* MadeOrderRouter.swift */; };
+		D7D5F8B82CE5057D00447B84 /* MadeOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8B32CE5057D00447B84 /* MadeOrderBuilder.swift */; };
+		D7D5F8B92CE5057D00447B84 /* MadeOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8B42CE5057D00447B84 /* MadeOrderInteractor.swift */; };
+		D7D5F8BA2CE5057D00447B84 /* MadeOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8B52CE5057D00447B84 /* MadeOrderView.swift */; };
+		D7D5F8BC2CE5089100447B84 /* CustomTableViewDrinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8BB2CE5089100447B84 /* CustomTableViewDrinkCell.swift */; };
+		D7F66DC12CE665040048BA29 /* YandexMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F66DBC2CE665040048BA29 /* YandexMapPresenter.swift */; };
+		D7F66DC22CE665040048BA29 /* YandexMapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F66DBD2CE665040048BA29 /* YandexMapRouter.swift */; };
+		D7F66DC32CE665040048BA29 /* YandexMapBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F66DBE2CE665040048BA29 /* YandexMapBuilder.swift */; };
+		D7F66DC42CE665040048BA29 /* YandexMapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F66DBF2CE665040048BA29 /* YandexMapInteractor.swift */; };
+		D7F66DC52CE665040048BA29 /* YandexMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F66DC02CE665040048BA29 /* YandexMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		710951365F9D92D01A76508C /* libPods-Order Coffe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Order Coffe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE5D8BA0465E8091A4CBA21 /* Pods-Order Coffe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Order Coffe.debug.xcconfig"; path = "Target Support Files/Pods-Order Coffe/Pods-Order Coffe.debug.xcconfig"; sourceTree = "<group>"; };
 		D72926092CD13741009946FB /* Order Coffe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Order Coffe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D729260C2CD13741009946FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D729260E2CD13741009946FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +100,34 @@
 		D78851112CDBCADE00B1AF7B /* ClousestCofeeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousestCofeeBuilder.swift; sourceTree = "<group>"; };
 		D78851122CDBCADE00B1AF7B /* ClousestCofeeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousestCofeeInteractor.swift; sourceTree = "<group>"; };
 		D78851132CDBCADE00B1AF7B /* ClousestCofeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousestCofeeView.swift; sourceTree = "<group>"; };
+		D78851192CDC101F00B1AF7B /* CustomTableViewPlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewPlaceCell.swift; sourceTree = "<group>"; };
+		D788511B2CDD0A0400B1AF7B /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		D788511D2CDE208800B1AF7B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		D7D5F8912CE20DC700447B84 /* LocationFromServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFromServer.swift; sourceTree = "<group>"; };
+		D7D5F8942CE24AB400447B84 /* OrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPresenter.swift; sourceTree = "<group>"; };
+		D7D5F8952CE24AB400447B84 /* OrderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRouter.swift; sourceTree = "<group>"; };
+		D7D5F8962CE24AB400447B84 /* OrderBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBuilder.swift; sourceTree = "<group>"; };
+		D7D5F8972CE24AB400447B84 /* OrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInteractor.swift; sourceTree = "<group>"; };
+		D7D5F8982CE24AB400447B84 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		D7D5F8A02CE2510200447B84 /* DrinksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksService.swift; sourceTree = "<group>"; };
+		D7D5F8A22CE2521100447B84 /* CofeeDrinksServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CofeeDrinksServer.swift; sourceTree = "<group>"; };
+		D7D5F8A42CE259C800447B84 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
+		D7D5F8A62CE2727600447B84 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		D7D5F8A82CE3838B00447B84 /* FetchImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImageService.swift; sourceTree = "<group>"; };
+		D7D5F8AA2CE3889B00447B84 /* CofeeDrinksCellModell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CofeeDrinksCellModell.swift; sourceTree = "<group>"; };
+		D7D5F8AC2CE3B3E800447B84 /* CustomCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCounterView.swift; sourceTree = "<group>"; };
+		D7D5F8B12CE5057D00447B84 /* MadeOrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadeOrderPresenter.swift; sourceTree = "<group>"; };
+		D7D5F8B22CE5057D00447B84 /* MadeOrderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadeOrderRouter.swift; sourceTree = "<group>"; };
+		D7D5F8B32CE5057D00447B84 /* MadeOrderBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadeOrderBuilder.swift; sourceTree = "<group>"; };
+		D7D5F8B42CE5057D00447B84 /* MadeOrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadeOrderInteractor.swift; sourceTree = "<group>"; };
+		D7D5F8B52CE5057D00447B84 /* MadeOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadeOrderView.swift; sourceTree = "<group>"; };
+		D7D5F8BB2CE5089100447B84 /* CustomTableViewDrinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewDrinkCell.swift; sourceTree = "<group>"; };
+		D7F66DBC2CE665040048BA29 /* YandexMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMapPresenter.swift; sourceTree = "<group>"; };
+		D7F66DBD2CE665040048BA29 /* YandexMapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMapRouter.swift; sourceTree = "<group>"; };
+		D7F66DBE2CE665040048BA29 /* YandexMapBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMapBuilder.swift; sourceTree = "<group>"; };
+		D7F66DBF2CE665040048BA29 /* YandexMapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMapInteractor.swift; sourceTree = "<group>"; };
+		D7F66DC02CE665040048BA29 /* YandexMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMapView.swift; sourceTree = "<group>"; };
+		F706203A52042E763DDA9777 /* Pods-Order Coffe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Order Coffe.release.xcconfig"; path = "Target Support Files/Pods-Order Coffe/Pods-Order Coffe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,17 +137,37 @@
 			files = (
 				D72926452CD244FE009946FB /* SnapKit in Frameworks */,
 				D78850FF2CDA381B00B1AF7B /* Alamofire in Frameworks */,
+				1DA8D7BEF0BF2387624F42DA /* libPods-Order Coffe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		161399F966DB86DA8BB1F605 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEE5D8BA0465E8091A4CBA21 /* Pods-Order Coffe.debug.xcconfig */,
+				F706203A52042E763DDA9777 /* Pods-Order Coffe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		99405304E2DEDAAB4FF41968 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				710951365F9D92D01A76508C /* libPods-Order Coffe.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D72926002CD13741009946FB = {
 			isa = PBXGroup;
 			children = (
 				D729260B2CD13741009946FB /* Order Coffe */,
 				D729260A2CD13741009946FB /* Products */,
+				161399F966DB86DA8BB1F605 /* Pods */,
+				99405304E2DEDAAB4FF41968 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,10 +186,9 @@
 				D72926202CD138F2009946FB /* Application */,
 				D729263C2CD144C9009946FB /* Core */,
 				D788510D2CDBCA4F00B1AF7B /* Helpers */,
-				D72926232CD13AAA009946FB /* Registration */,
-				D78851022CDB8B2200B1AF7B /* Login */,
-				D788510E2CDBCA8F00B1AF7B /* ClousestCofee */,
+				D7D5F89F2CE2506E00447B84 /* Moudels */,
 				D72926212CD13918009946FB /* Resources */,
+				D7D5F89E2CE2504700447B84 /* Storage */,
 				D72926392CD14350009946FB /* UI-Components */,
 			);
 			path = "Order Coffe";
@@ -140,6 +217,10 @@
 			isa = PBXGroup;
 			children = (
 				D78850FB2CDA312100B1AF7B /* AuthService.swift */,
+				D788511B2CDD0A0400B1AF7B /* LocationService.swift */,
+				D7D5F8A82CE3838B00447B84 /* FetchImageService.swift */,
+				D7D5F8A02CE2510200447B84 /* DrinksService.swift */,
+				D7D5F8A42CE259C800447B84 /* APIProtocol.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -159,11 +240,15 @@
 		D72926392CD14350009946FB /* UI-Components */ = {
 			isa = PBXGroup;
 			children = (
+				D78851002CDA86C600B1AF7B /* AuthAlertController.swift */,
 				D7335F602CD28E1D00A75A84 /* CustomButton.swift */,
 				D729263A2CD14424009946FB /* CustomNavigationController.swift */,
 				D72926412CD24240009946FB /* CustomTextFieldWithTitle.swift */,
 				D7335F5E2CD2711200A75A84 /* CustomTextField.swift */,
-				D78851002CDA86C600B1AF7B /* AuthAlertController.swift */,
+				D78851192CDC101F00B1AF7B /* CustomTableViewPlaceCell.swift */,
+				D7D5F8BB2CE5089100447B84 /* CustomTableViewDrinkCell.swift */,
+				D7D5F8A62CE2727600447B84 /* CustomCollectionViewCell.swift */,
+				D7D5F8AC2CE3B3E800447B84 /* CustomCounterView.swift */,
 			);
 			path = "UI-Components";
 			sourceTree = "<group>";
@@ -192,7 +277,10 @@
 		D788510D2CDBCA4F00B1AF7B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				D7D5F8912CE20DC700447B84 /* LocationFromServer.swift */,
 				D7335F622CD3AAB000A75A84 /* AuthManager.swift */,
+				D7D5F8AA2CE3889B00447B84 /* CofeeDrinksCellModell.swift */,
+				D7D5F8A22CE2521100447B84 /* CofeeDrinksServer.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -200,13 +288,70 @@
 		D788510E2CDBCA8F00B1AF7B /* ClousestCofee */ = {
 			isa = PBXGroup;
 			children = (
-				D788510F2CDBCADE00B1AF7B /* ClousestCofeePresenter.swift */,
 				D78851102CDBCADE00B1AF7B /* ClousestCofeeRouter.swift */,
 				D78851112CDBCADE00B1AF7B /* ClousestCofeeBuilder.swift */,
 				D78851122CDBCADE00B1AF7B /* ClousestCofeeInteractor.swift */,
+				D788510F2CDBCADE00B1AF7B /* ClousestCofeePresenter.swift */,
 				D78851132CDBCADE00B1AF7B /* ClousestCofeeView.swift */,
 			);
 			path = ClousestCofee;
+			sourceTree = "<group>";
+		};
+		D7D5F8932CE24A8100447B84 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				D7D5F8952CE24AB400447B84 /* OrderRouter.swift */,
+				D7D5F8962CE24AB400447B84 /* OrderBuilder.swift */,
+				D7D5F8972CE24AB400447B84 /* OrderInteractor.swift */,
+				D7D5F8942CE24AB400447B84 /* OrderPresenter.swift */,
+				D7D5F8982CE24AB400447B84 /* OrderView.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		D7D5F89E2CE2504700447B84 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				D788511D2CDE208800B1AF7B /* StorageManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		D7D5F89F2CE2506E00447B84 /* Moudels */ = {
+			isa = PBXGroup;
+			children = (
+				D72926232CD13AAA009946FB /* Registration */,
+				D78851022CDB8B2200B1AF7B /* Login */,
+				D788510E2CDBCA8F00B1AF7B /* ClousestCofee */,
+				D7F66DBB2CE664CA0048BA29 /* YandexMap */,
+				D7D5F8932CE24A8100447B84 /* Order */,
+				D7D5F8B02CE5054100447B84 /* MadeOrder */,
+			);
+			path = Moudels;
+			sourceTree = "<group>";
+		};
+		D7D5F8B02CE5054100447B84 /* MadeOrder */ = {
+			isa = PBXGroup;
+			children = (
+				D7D5F8B22CE5057D00447B84 /* MadeOrderRouter.swift */,
+				D7D5F8B32CE5057D00447B84 /* MadeOrderBuilder.swift */,
+				D7D5F8B42CE5057D00447B84 /* MadeOrderInteractor.swift */,
+				D7D5F8B12CE5057D00447B84 /* MadeOrderPresenter.swift */,
+				D7D5F8B52CE5057D00447B84 /* MadeOrderView.swift */,
+			);
+			path = MadeOrder;
+			sourceTree = "<group>";
+		};
+		D7F66DBB2CE664CA0048BA29 /* YandexMap */ = {
+			isa = PBXGroup;
+			children = (
+				D7F66DBD2CE665040048BA29 /* YandexMapRouter.swift */,
+				D7F66DBE2CE665040048BA29 /* YandexMapBuilder.swift */,
+				D7F66DBF2CE665040048BA29 /* YandexMapInteractor.swift */,
+				D7F66DBC2CE665040048BA29 /* YandexMapPresenter.swift */,
+				D7F66DC02CE665040048BA29 /* YandexMapView.swift */,
+			);
+			path = YandexMap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,9 +361,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D729261D2CD13744009946FB /* Build configuration list for PBXNativeTarget "Order Coffe" */;
 			buildPhases = (
+				3DCA2EC6233624B822584AE6 /* [CP] Check Pods Manifest.lock */,
 				D72926052CD13741009946FB /* Sources */,
 				D72926062CD13741009946FB /* Frameworks */,
 				D72926072CD13741009946FB /* Resources */,
+				B96897156A55487333136194 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,6 +429,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3DCA2EC6233624B822584AE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Order Coffe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B96897156A55487333136194 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Order Coffe/Pods-Order Coffe-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Order Coffe/Pods-Order Coffe-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Order Coffe/Pods-Order Coffe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D72926052CD13741009946FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -289,29 +478,56 @@
 			files = (
 				D7335F612CD28E1D00A75A84 /* CustomButton.swift in Sources */,
 				D78851142CDBCADE00B1AF7B /* ClousestCofeePresenter.swift in Sources */,
+				D7D5F8BC2CE5089100447B84 /* CustomTableViewDrinkCell.swift in Sources */,
 				D78850FC2CDA312100B1AF7B /* AuthService.swift in Sources */,
 				D729260D2CD13741009946FB /* AppDelegate.swift in Sources */,
+				D7D5F89D2CE24AB500447B84 /* OrderView.swift in Sources */,
+				D7D5F89B2CE24AB500447B84 /* OrderBuilder.swift in Sources */,
 				D72926422CD24240009946FB /* CustomTextFieldWithTitle.swift in Sources */,
+				D788511E2CDE208800B1AF7B /* StorageManager.swift in Sources */,
+				D7D5F8BA2CE5057D00447B84 /* MadeOrderView.swift in Sources */,
+				D7D5F8B72CE5057D00447B84 /* MadeOrderRouter.swift in Sources */,
 				D72926402CD23C29009946FB /* ColorLibrery.swift in Sources */,
 				D72926362CD1433F009946FB /* RegistrationBuilder.swift in Sources */,
 				D78851182CDBCADE00B1AF7B /* ClousestCofeeView.swift in Sources */,
+				D7D5F89A2CE24AB500447B84 /* OrderRouter.swift in Sources */,
+				D7D5F8AB2CE3889B00447B84 /* CofeeDrinksCellModell.swift in Sources */,
 				D729263E2CD14508009946FB /* SetRGBColor.swift in Sources */,
 				D72926342CD1433F009946FB /* RegistrationPresenter.swift in Sources */,
+				D7D5F89C2CE24AB500447B84 /* OrderInteractor.swift in Sources */,
 				D788510B2CDB8B5E00B1AF7B /* LoginInteractor.swift in Sources */,
+				D7F66DC32CE665040048BA29 /* YandexMapBuilder.swift in Sources */,
+				D7D5F8A92CE3838B00447B84 /* FetchImageService.swift in Sources */,
+				D7F66DC42CE665040048BA29 /* YandexMapInteractor.swift in Sources */,
+				D7D5F8A72CE2727600447B84 /* CustomCollectionViewCell.swift in Sources */,
 				D72926382CD1433F009946FB /* RegistrationView.swift in Sources */,
+				D7D5F8B82CE5057D00447B84 /* MadeOrderBuilder.swift in Sources */,
 				D78851082CDB8B5E00B1AF7B /* LoginPresenter.swift in Sources */,
+				D7D5F8A32CE2521100447B84 /* CofeeDrinksServer.swift in Sources */,
+				D7D5F8992CE24AB500447B84 /* OrderPresenter.swift in Sources */,
 				D78851012CDA86C600B1AF7B /* AuthAlertController.swift in Sources */,
+				D788511C2CDD0A0400B1AF7B /* LocationService.swift in Sources */,
 				D729263B2CD14424009946FB /* CustomNavigationController.swift in Sources */,
+				D7D5F8A12CE2510200447B84 /* DrinksService.swift in Sources */,
 				D788510A2CDB8B5E00B1AF7B /* LoginBuilder.swift in Sources */,
 				D78851152CDBCADE00B1AF7B /* ClousestCofeeRouter.swift in Sources */,
+				D7D5F8A52CE259C800447B84 /* APIProtocol.swift in Sources */,
 				D78851162CDBCADE00B1AF7B /* ClousestCofeeBuilder.swift in Sources */,
+				D788511A2CDC101F00B1AF7B /* CustomTableViewPlaceCell.swift in Sources */,
+				D7F66DC22CE665040048BA29 /* YandexMapRouter.swift in Sources */,
+				D7D5F8922CE20DC700447B84 /* LocationFromServer.swift in Sources */,
 				D7335F632CD3AAB000A75A84 /* AuthManager.swift in Sources */,
 				D78851172CDBCADE00B1AF7B /* ClousestCofeeInteractor.swift in Sources */,
 				D788510C2CDB8B5E00B1AF7B /* LoginView.swift in Sources */,
+				D7D5F8B92CE5057D00447B84 /* MadeOrderInteractor.swift in Sources */,
+				D7F66DC12CE665040048BA29 /* YandexMapPresenter.swift in Sources */,
+				D7D5F8B62CE5057D00447B84 /* MadeOrderPresenter.swift in Sources */,
 				D7335F5F2CD2711200A75A84 /* CustomTextField.swift in Sources */,
 				D78851092CDB8B5E00B1AF7B /* LoginRouter.swift in Sources */,
 				D72926372CD1433F009946FB /* RegistrationInteractor.swift in Sources */,
 				D729260F2CD13741009946FB /* SceneDelegate.swift in Sources */,
+				D7D5F8AD2CE3B3E800447B84 /* CustomCounterView.swift in Sources */,
+				D7F66DC52CE665040048BA29 /* YandexMapView.swift in Sources */,
 				D72926352CD1433F009946FB /* RegistrationRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +662,7 @@
 		};
 		D729261E2CD13744009946FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE5D8BA0465E8091A4CBA21 /* Pods-Order Coffe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -476,6 +693,7 @@
 		};
 		D729261F2CD13744009946FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F706203A52042E763DDA9777 /* Pods-Order Coffe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

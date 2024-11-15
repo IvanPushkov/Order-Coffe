@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class CustomTextFieldWithTitle: UIView{
     lazy var titleLable = getTitleLable()
     lazy var textField = getTextField()

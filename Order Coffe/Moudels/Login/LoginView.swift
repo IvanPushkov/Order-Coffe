@@ -40,7 +40,9 @@ extension LoginView: LoginViewProtocol {
     
     func getAccountTextField() {
         let textField = CustomTextFieldWithTitle(title: "e-mail")
+        textField.textField.delegate = self
         view.addSubview(textField)
+ //       textField.textField.text = "Qwe@yandex.ru"  //here
         textField.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.right.left.equalToSuperview().inset(18)
@@ -52,10 +54,12 @@ extension LoginView: LoginViewProtocol {
     func getPasswordTextField() {
         let textField = CustomTextFieldWithTitle(title: "Пароль")
         view.addSubview(textField)
+        textField.textField.delegate = self
+    //    textField.textField.text = "12345Qq"    //here
         textField.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.right.left.equalToSuperview().inset(18)
-            make.top.equalTo(nameLoginTextField).offset(60)
+            make.top.equalTo(nameLoginTextField.snp.bottom).offset(60)
         }
         passwordLoginTextField = textField
     }
@@ -82,6 +86,14 @@ extension LoginView: LoginViewProtocol {
             let alert = AuthAlertController(massage: text)
             self.present(alert, animated: true)
         }
+    }
+    
+}
+extension LoginView: UITextFieldDelegate{
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
 }

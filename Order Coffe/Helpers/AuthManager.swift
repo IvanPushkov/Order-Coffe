@@ -20,27 +20,35 @@ enum AccountData: String{
 
 
 protocol RegistrationManagerProtocol{
-    func getConditionBeforRequest(accountData: [AccountData: String?]) -> RegistrationCondition
+    func getCondition(accountData: [AccountData : String?], authOperation: AuthOperation, complection: @escaping (RegistrationCondition) ->())
 }
 
 class AuthManager: RegistrationManagerProtocol{
     
+    
+    
     static let shared = AuthManager()
     let authService = AuthService.shared
     
-    func getCondition(accountData: [AccountData : String?], authOperation: AuthOperation) -> RegistrationCondition {
+    func getCondition(accountData: [AccountData : String?], authOperation: AuthOperation, complection: @escaping (RegistrationCondition) ->()) {
         let conditionBeforRequest = getConditionBeforRequest(accountData: accountData)
-        if conditionBeforRequest == .success{
-            let dataForRequest  = getDataForRequest(accountData: accountData)
-            authService.tryToAuth(AccountData: dataForRequest,operationType: authOperation){
-                responseFromServer in
-                return responseFromServer
+        if conditionBeforRequest != .success{
+            complection(conditionBeforRequest)
+        } else{
+                getConditionAfterrequest(accountData: accountData, authOperation: authOperation) { response in
+                     complection(response)
             }
         }
-        return conditionBeforRequest
     }
     
-    func getConditionBeforRequest(accountData: [AccountData : String?]) -> RegistrationCondition {
+    private func getConditionAfterrequest(accountData: [AccountData : String?], authOperation: AuthOperation, complection: @escaping (RegistrationCondition) ->()){
+        let dataForRequest  = getDataForRequest(accountData: accountData)
+        authService.tryToAuth(AccountData: dataForRequest,operationType: authOperation){ response in
+            complection(response)
+        }
+    }
+    
+    private func getConditionBeforRequest(accountData: [AccountData : String?]) -> RegistrationCondition {
         if accountData.values.contains(nil){
             return RegistrationCondition.textUnField
         } else if accountData[AccountData.password]!!.count <= 6 {
@@ -78,8 +86,7 @@ class AuthManager: RegistrationManagerProtocol{
             return  false
         }
     }
-    
-    func getDataForRequest(accountData: [AccountData : String?]) -> [String: Any]{
+   private func getDataForRequest(accountData: [AccountData : String?]) -> [String: Any]{
         var dataForRequest: [String: Any] = ["login": "", "password": ""]
         dataForRequest["login"] = accountData[.login]!
         dataForRequest["password"] = accountData[.password]!

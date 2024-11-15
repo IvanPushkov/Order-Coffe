@@ -16,4 +16,5 @@ extension UIColor{
     static let customButtonTextColor = UIColor.setRGBColor(red: 246, green: 229, blue: 209)
     static let customButtonColor = UIColor.setRGBColor(red: 52, green: 45, blue: 26)
     static let customButtomBorderColor = UIColor.setRGBColor(red: 255, green: 255, blue: 255, alpha: 0.15)
+    
 }

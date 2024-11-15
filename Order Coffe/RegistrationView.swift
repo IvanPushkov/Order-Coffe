@@ -28,7 +28,7 @@ final class RegistrationView: UIViewController {
     weak var registrateButton: CustomButton!
 }
 
-extension RegistrationView: RegistrationViewProtocol {
+extension RegistrationView: RegistrationViewProtocol  {
     
     
    
@@ -42,6 +42,7 @@ extension RegistrationView: RegistrationViewProtocol {
     func getRegisterNameTextField() {
         let textField = CustomTextFieldWithTitle(title: "e-mail", placeHolderText: "example@example.ru")
         view.addSubview(textField)
+        textField.textField.delegate = self
         textField.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(200)
             make.right.left.equalToSuperview().inset(18)
@@ -51,6 +52,7 @@ extension RegistrationView: RegistrationViewProtocol {
     func  getPassWordTextField() {
         let  textField = CustomTextFieldWithTitle(title: "Пароль")
         view.addSubview(textField)
+        textField.textField.delegate = self
         textField.snp.makeConstraints { make in
             make.top.equalTo(nameTextField.snp_bottomMargin).offset(60)
             make.right.left.equalToSuperview().inset(18)
@@ -59,6 +61,7 @@ extension RegistrationView: RegistrationViewProtocol {
     }
     func getRepeatPasswordTextField() {
         let  textField = CustomTextFieldWithTitle(title: "Повторите пароль")
+        textField.textField.delegate = self
         view.addSubview(textField)
         textField.snp.makeConstraints { make in
             make.top.equalTo(passwordTextField.snp_bottomMargin).offset(60)
@@ -94,4 +97,11 @@ extension RegistrationView: RegistrationViewProtocol {
             self.present(alert, animated: true)
         }
     }
+}
+
+extension RegistrationView: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           textField.resignFirstResponder()  
+           return true
+       }
 }

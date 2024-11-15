@@ -1,9 +1,4 @@
-//  
-//  LoginRouter.swift
-//  Order Coffe
-//
-//  Created by Ivan Pushkov on 06.11.2024.
-//
+
 
 import UIKit
 
