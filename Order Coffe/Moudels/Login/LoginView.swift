@@ -20,6 +20,7 @@ protocol LoginViewProtocol : AnyObject {
     func takeLoginPasswordtext()-> [String?]
     func showAlertView(with text: String)
     func setViewToShow()
+    func fastLounch()
 }
 
 final class LoginView: UIViewController {
@@ -42,7 +43,6 @@ extension LoginView: LoginViewProtocol {
         let textField = CustomTextFieldWithTitle(title: "e-mail")
         textField.textField.delegate = self
         view.addSubview(textField)
-        textField.textField.text = "Qwe@yandex.ru"  //here
         textField.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.right.left.equalToSuperview().inset(18)
@@ -55,7 +55,6 @@ extension LoginView: LoginViewProtocol {
         let textField = CustomTextFieldWithTitle(title: "Пароль")
         view.addSubview(textField)
         textField.textField.delegate = self
-        textField.textField.text = "12345Qq"    //here
         textField.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.right.left.equalToSuperview().inset(18)
@@ -75,6 +74,7 @@ extension LoginView: LoginViewProtocol {
         loginButton = button
     }
     
+   
     @objc func tryToEnter(){
         presenter?.tryToLogin()
     }
@@ -92,6 +92,10 @@ extension LoginView: LoginViewProtocol {
         view.backgroundColor  = .white
         self.navigationItem.hidesBackButton = true
     }
+    func fastLounch(){
+        passwordLoginTextField.textField.text = "12345Qq"
+        nameLoginTextField.textField.text = "Qwe@yandex.ru"
+    }
     
 }
 extension LoginView: UITextFieldDelegate{
@@ -101,7 +105,10 @@ extension LoginView: UITextFieldDelegate{
         return true
     }
     
+    
 }
+
+
 
   
 

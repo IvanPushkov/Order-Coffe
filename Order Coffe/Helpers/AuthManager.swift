@@ -19,14 +19,11 @@ enum AccountData: String{
 
 
 
-protocol RegistrationManagerProtocol{
+protocol AuthManagerProtocol{
     func getCondition(accountData: [AccountData : String?], authOperation: AuthOperation, complection: @escaping (RegistrationCondition) ->())
 }
 
-class AuthManager: RegistrationManagerProtocol{
-    
-    
-    
+class AuthManager: AuthManagerProtocol{
     static let shared = AuthManager()
     let authService = AuthService.shared
     
@@ -65,7 +62,7 @@ class AuthManager: RegistrationManagerProtocol{
     
     private func passwordsIsEquals(accountData:[AccountData : String?]) -> Bool{
         if accountData[AccountData.password] == accountData[AccountData.repeatedPassword]{
-           return true
+            return true
         }
         return false
     }

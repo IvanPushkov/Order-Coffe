@@ -37,6 +37,7 @@ final class LoginPresenter: LoginPresenterProtocol {
         view?.getAccountTextField()
         view?.getPasswordTextField()
         view?.getLoginButton()
+        view?.fastLounch()
     }
     func tryToLogin() {
         let loginPasswordtext = view?.takeLoginPasswordtext()
