@@ -1,13 +1,7 @@
-//  
-//  ClousestCofeeView.swift
-//  Order Coffe
-//
-//  Created by Ivan Pushkov on 06.11.2024.
-//
 
-import Foundation
 import UIKit
 import SnapKit
+import CoreLocation
 
 
 protocol ClousestCofeeViewProtocol : AnyObject {
@@ -17,13 +11,14 @@ protocol ClousestCofeeViewProtocol : AnyObject {
     func configRows(cofeRooms: Locations)
     func updateView()
     func setViewToShow()
+    func showAlert(title: String, message: String, url: String)
 }
 
 final class ClousestCofeeView: UIViewController {
     var presenter: ClousestCofeePresenterProtocol?
    weak var lookOnTheMapBotton: CustomButton!
    weak var cofeePlacetableView: UITableView!
-    
+    var answer = false
     var cofeRooms: Locations = []
     
     override func viewDidLoad() {
@@ -74,6 +69,10 @@ extension ClousestCofeeView: ClousestCofeeViewProtocol, UITableViewDataSource, U
     func updateView(){
         self.cofeePlacetableView.reloadData()
     }
+    func showAlert(title: String, message: String, url: String){
+        let alert = LocationAlertController(titleAlert: title, message: message, url: url)
+        self.present(alert, animated: true)
+    }
     
     //MARK: - UITableViewDataSource
     
@@ -102,3 +101,4 @@ extension ClousestCofeeView: ClousestCofeeViewProtocol, UITableViewDataSource, U
     }
     
 }
+

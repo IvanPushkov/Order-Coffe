@@ -42,6 +42,10 @@
 		D788511C2CDD0A0400B1AF7B /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D788511B2CDD0A0400B1AF7B /* LocationService.swift */; };
 		D788511E2CDE208800B1AF7B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D788511D2CDE208800B1AF7B /* StorageManager.swift */; };
 		D7A010962CECB5CB00B9836B /* RegistrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A010952CECB5CB00B9836B /* RegistrationTest.swift */; };
+		D7A010982CECD44F00B9836B /* YMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A010972CECD44F00B9836B /* YMapView.swift */; };
+		D7A0109A2CEDF3F100B9836B /* UnwrapingLocationsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A010992CEDF3F100B9836B /* UnwrapingLocationsTest.swift */; };
+		D7A0109C2CEE312100B9836B /* MapLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0109B2CEE312000B9836B /* MapLocationManager.swift */; };
+		D7A0109E2CEE3D4500B9836B /* LocationAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0109D2CEE3D4500B9836B /* LocationAlertController.swift */; };
 		D7D5F8922CE20DC700447B84 /* LocationFromServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8912CE20DC700447B84 /* LocationFromServer.swift */; };
 		D7D5F8992CE24AB500447B84 /* OrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8942CE24AB400447B84 /* OrderPresenter.swift */; };
 		D7D5F89A2CE24AB500447B84 /* OrderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D5F8952CE24AB400447B84 /* OrderRouter.swift */; };
@@ -116,6 +120,10 @@
 		D788511D2CDE208800B1AF7B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		D7A0108C2CECB57600B9836B /* Order CoffeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Order CoffeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A010952CECB5CB00B9836B /* RegistrationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTest.swift; sourceTree = "<group>"; };
+		D7A010972CECD44F00B9836B /* YMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMapView.swift; sourceTree = "<group>"; };
+		D7A010992CEDF3F100B9836B /* UnwrapingLocationsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnwrapingLocationsTest.swift; sourceTree = "<group>"; };
+		D7A0109B2CEE312000B9836B /* MapLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationManager.swift; sourceTree = "<group>"; };
+		D7A0109D2CEE3D4500B9836B /* LocationAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAlertController.swift; sourceTree = "<group>"; };
 		D7D5F8912CE20DC700447B84 /* LocationFromServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFromServer.swift; sourceTree = "<group>"; };
 		D7D5F8942CE24AB400447B84 /* OrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPresenter.swift; sourceTree = "<group>"; };
 		D7D5F8952CE24AB400447B84 /* OrderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRouter.swift; sourceTree = "<group>"; };
@@ -262,8 +270,10 @@
 		D72926392CD14350009946FB /* UI-Components */ = {
 			isa = PBXGroup;
 			children = (
+				D7A010972CECD44F00B9836B /* YMapView.swift */,
 				D78851002CDA86C600B1AF7B /* AuthAlertController.swift */,
 				D7335F602CD28E1D00A75A84 /* CustomButton.swift */,
+				D7A0109D2CEE3D4500B9836B /* LocationAlertController.swift */,
 				D729263A2CD14424009946FB /* CustomNavigationController.swift */,
 				D72926412CD24240009946FB /* CustomTextFieldWithTitle.swift */,
 				D7335F5E2CD2711200A75A84 /* CustomTextField.swift */,
@@ -303,6 +313,7 @@
 				D7335F622CD3AAB000A75A84 /* AuthManager.swift */,
 				D7D5F8AA2CE3889B00447B84 /* CofeeDrinksCellModell.swift */,
 				D7D5F8A22CE2521100447B84 /* CofeeDrinksServer.swift */,
+				D7A0109B2CEE312000B9836B /* MapLocationManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -323,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				D7A010952CECB5CB00B9836B /* RegistrationTest.swift */,
+				D7A010992CEDF3F100B9836B /* UnwrapingLocationsTest.swift */,
 			);
 			path = "Order CoffeTests";
 			sourceTree = "<group>";
@@ -546,6 +558,7 @@
 				D7D5F89B2CE24AB500447B84 /* OrderBuilder.swift in Sources */,
 				D72926422CD24240009946FB /* CustomTextFieldWithTitle.swift in Sources */,
 				D788511E2CDE208800B1AF7B /* StorageManager.swift in Sources */,
+				D7A0109C2CEE312100B9836B /* MapLocationManager.swift in Sources */,
 				D7D5F8BA2CE5057D00447B84 /* MadeOrderView.swift in Sources */,
 				D7D5F8B72CE5057D00447B84 /* MadeOrderRouter.swift in Sources */,
 				D72926402CD23C29009946FB /* ColorLibrery.swift in Sources */,
@@ -557,6 +570,7 @@
 				D72926342CD1433F009946FB /* RegistrationPresenter.swift in Sources */,
 				D7D5F89C2CE24AB500447B84 /* OrderInteractor.swift in Sources */,
 				D788510B2CDB8B5E00B1AF7B /* LoginInteractor.swift in Sources */,
+				D7A0109E2CEE3D4500B9836B /* LocationAlertController.swift in Sources */,
 				D7F66DC32CE665040048BA29 /* YandexMapBuilder.swift in Sources */,
 				D7D5F8A92CE3838B00447B84 /* FetchImageService.swift in Sources */,
 				D7F66DC42CE665040048BA29 /* YandexMapInteractor.swift in Sources */,
@@ -582,6 +596,7 @@
 				D788510C2CDB8B5E00B1AF7B /* LoginView.swift in Sources */,
 				D7D5F8B92CE5057D00447B84 /* MadeOrderInteractor.swift in Sources */,
 				D7F66DC12CE665040048BA29 /* YandexMapPresenter.swift in Sources */,
+				D7A010982CECD44F00B9836B /* YMapView.swift in Sources */,
 				D7D5F8B62CE5057D00447B84 /* MadeOrderPresenter.swift in Sources */,
 				D7335F5F2CD2711200A75A84 /* CustomTextField.swift in Sources */,
 				D78851092CDB8B5E00B1AF7B /* LoginRouter.swift in Sources */,
@@ -597,6 +612,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A0109A2CEDF3F100B9836B /* UnwrapingLocationsTest.swift in Sources */,
 				D7A010962CECB5CB00B9836B /* RegistrationTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

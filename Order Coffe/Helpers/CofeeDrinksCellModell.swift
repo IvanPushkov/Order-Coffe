@@ -1,9 +1,4 @@
-//
-//  CofeeDrinksCellModell.swift
-//  Order Coffe
-//
-//  Created by Ivan Pushkov on 12.11.2024.
-//
+
 
 import Foundation
 

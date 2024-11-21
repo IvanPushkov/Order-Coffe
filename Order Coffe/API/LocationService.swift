@@ -19,7 +19,7 @@ class LocationService: APIProtocol{
     func fetchLocations(complection: @escaping (Locations)->()){
         AF.request(locationUrl,headers: getHeader())
             .responseDecodable{(response: DataResponse<Locations, AFError>) in
-            //    debugPrint(response)
+             //   debugPrint(response)
                 switch response.result{
                 case .success(let locations): complection(locations)
                 case .failure(let error): print(error)
